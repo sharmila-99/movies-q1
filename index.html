@@ -1,90 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Tickets Company</title>
+    <meta http-equiv="content-language" content="en-us">
     <style>
-        body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-        header ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-between;
-        }
-        header li {
-            margin: 0 10px;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-        }
-        .movies {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 20px 0;
-        }
-        .movie {
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            flex-basis: 30%;
-            margin-bottom: 20px;
-            padding: 15px;
-        }
-        .movie img {
-            width: 100%;
-            border-radius: 5px 5px 0 0;
-        }
-        .movie h3 {
-            margin: 10px 0;
-        }
-        .movie p {
-            margin: 5px 0;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            margin-top: 20px;
-        }
-        form {
-            background-color: #fff;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        form input[type="text"] {
-            flex-basis: 70%;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        form button {
-            flex-basis: 25%;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+        /* Add your CSS styles here */
     </style>
 </head>
 <body>
     <header>
-        <ul>
+        <div class="header">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" alt="Movie Tickets Company Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><button>Book Now</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="movies">
+            <h2>Now Showing: Movies in Different Languages</h2>
+            <div class="movie-container">
+                <div class="movie">
+                    <img src="movie1.jpg" alt="Movie 1">
+                    <div class="movie-details">
+                        <p lang="fr" xml:lang="fr">
+                            Aquí hay una oración en español. Usamos el traductor de Google, así que espero que sea correcto. Debido a que este párrafo está en un idioma nuevo, lo hemos notado en el HTML del párrafo.
+                        </p>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="movie2.jpg" alt="Movie 2">
+                    <div class="movie-details">
+                        <p lang="es" xml:lang="es">
+                            Nullam id felis at ipsum bibendum ultrices. Sed bibendum, mi vel interdum consequat, nisi nisi egestas nisl, ac volutpat nisl nisl vel sapien.
+                        </p>
+                    </div>
+                </div>
+                <div class="movie">
+                    <img src="movie3.jpg" alt="Movie 3">
+                    <div class="movie-details">
+                        <p lang="de" xml:lang="de">
+                            Curabitur eget eros eu odio lacinia interdum. Pellentesque venenatis metus ac orci imperdiet, nec pellentesque velit tempus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Movie Tickets Company. All rights reserved.</p>
+    </footer>
+    <script>
+        // Add your JavaScript code here
+    </script>
+</body>
+</html>
